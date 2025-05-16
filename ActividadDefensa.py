@@ -93,22 +93,3 @@ class BibliotecaDigital():
         print(f"{mat.nombre} -> ", end="")
         mat.clasificar()
 
-if __name__ == "__main__":
-    biblioteca = BibliotecaDigital()
-
-    # Crear instancias de cada tipo
-    libro = Libro("Cien años de soledad", "Gabriel García Márquez", "L001", "L001", "L001")
-    revista = Revista("National Geographic", "Varios", "R001", "R001" , "R001")
-    tesis = Tesis("Deep Learning Avanzado", "Ana Pérez", "T001", "Doctorado", "Doctorado")
-
-    # Agregar al catálogo
-    biblioteca.agregar_material(libro)
-    biblioteca.agregar_material(revista)
-    biblioteca.agregar_material(tesis)
-
-    # Mostrar catálogo e interactuar
-    biblioteca.mostrar_catalogo()
-    biblioteca.prestar_material("L001")
-    biblioteca.prestar_material("T001")
-    biblioteca.clasificar_material("R001")
-
